@@ -1,4 +1,5 @@
-# ReportHive
+# ReportHive - POWER SIZE MEASUREMENT AND REPORTING TOOLS
+
 Power size measurement and reporting tools
 
 Đây là Demo dự án tính toán dữ liệu báo cáo và sao lưu, cách xây dựng giao diện, cầu nối dữ liệu và các công thức,chức năng tổng quát sơ lượt
@@ -16,7 +17,7 @@ npm install axios jwt-decode
 
 # Liên kết Frontend với Backend
 
-Backend Spring Boot chạy trên server khác, đảm bảo API của bạn có thể truy cập công khai.
+Backend Spring Boot chạy trên server khác, đảm bảo API có thể truy cập công khai.
 Nếu backend local, bạn có thể sử dụng công cụ như Ngrok để tạo URL công khai tạm thời:
 
 ```
@@ -57,3 +58,7 @@ spring.datasource.backup.url=jdbc:sqlserver://<BACKUP_HOST>:1433;databaseName=<B
 spring.datasource.backup.username=<USERNAME>
 spring.datasource.backup.password=<PASSWORD>
 ```
+
+# Chức năng import Excel
+
+Chạy url `/upload`
