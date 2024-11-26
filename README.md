@@ -1,7 +1,7 @@
 # ReportHive
 Power size measurement and reporting tools
 
-Đây là Demo dự án, bạn có thể xem ui và các chức năng liên quan
+Đây là Demo dự án, cách xây dựng giao diện, cầu nối dữ liệu và các công thức,chức năng tổng quát sơ lược
 
 # Chạy Frontend
 
@@ -24,3 +24,18 @@ ngrok http 8080
 ```
 
 Cập nhật biến môi trường `API_URL` trong Vercel để trỏ đến URL của backend.
+
+# Biểu đồ báo cáo tạo theo công thức
+
+service layer để tính toán:
+
+`Doanh thu, sản lượng build`: Query từ cơ sở dữ liệu.
+
+`Utilization`: Dựa trên công thức:
+
+```
+Utilization (%) = (Required Capacity / Installed Capacity) * 100
+Installed Capacity = Max Equipment x 3 Shifts
+````
+
+`Điểm nhấn`: Tìm các mục vượt 85% hoặc thiếu line/tester
